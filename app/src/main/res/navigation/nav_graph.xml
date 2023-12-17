@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@+id/mealListFragment">
+    <fragment
+        android:id="@+id/mealListFragment"
+        android:name="je.raweeroj.mealzapplication.meal_list.meallistFragment"
+        android:label="MealListFragment" >
+        <action
+            android:id="@+id/action_mealListFragment_to_mealDetailsFragment"
+            app:destination="@id/mealDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mealDetailFragment"
+        android:name="je.raweeroj.mealzapplication.meal_list.meallistFragment"
+        android:label="MealListFragment" >
+    </fragment>
+
+</navigation>
